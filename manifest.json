@@ -1,0 +1,14 @@
+{
+  "name": "Git Copywriter",
+  "description": "Helps you write beautiful git messages",
+  "version": "1.0",
+  "manifest_version": 3,
+
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["jquery-3.6.0.min.js", "github-copywriter.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
